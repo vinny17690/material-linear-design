@@ -1,0 +1,71 @@
+@font-face {
+    font-weight:500;
+    font-family:'Product Sans';
+    src:url('fonts/Product Sans Bold.ttf');
+    font-style: bold;
+}
+@font-face {
+    font-weight:400;
+    font-family:'Product Sans';
+    src:url('fonts/Product Sans Regular.ttf');
+    font-style:normal;
+}
+
+body {
+    font-family: 'Product Sans';
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.card {
+    position: absolute;
+    left:37%;
+    background-color: #fff;
+    box-shadow: 0 1px 10px 0 rgba(36,50,66,.14);
+    height: 80%;
+    display: block;
+    text-align: center;
+    width: 25%;
+    border-radius: 3px;
+}
+
+.card:before {
+    content: "";
+    display: block;
+    border-radius: 3px 3px 0 0;
+    height: 6px;
+    background: linear-gradient(90deg,#02ceff 0,#a177ff);
+}
+
+.card h1:after {
+    content: "";
+    display: block;
+    padding-top: 20px;
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.pricing {
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.card a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #796eff;
+    padding: 1em 1.4em;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background-color: #584dd8;
+    opacity: 0.9;
+}
+
+.pricing-description {
+    margin-top: 0;
+    margin-bottom: 15%;
+}
